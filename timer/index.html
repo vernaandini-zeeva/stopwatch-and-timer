@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Timer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="timer.css">
+</head>
+<body>
+
+<div class="top-tabs">
+   <button class="tab" onclick="location.href='stopwatch.html'">Stopwatch</button>
+    <button class="tab active">Timer</button>
+</div>
+
+<div class="container">
+    <h1>Timer</h1>
+
+    <div class="inputs">
+        <div>
+            <label>Jam</label>
+            <input type="number" id="inHour" value="0" min="0">
+        </div>
+        <div>
+            <label>Menit</label>
+            <input type="number" id="inMin" value="1" min="0" max="59">
+        </div>
+        <div>
+            <label>Detik</label>
+            <input type="number" id="inSec" value="0" min="0" max="59">
+        </div>
+    </div>
+
+    <div class="display" id="display">00:01:00:00</div>
+
+    <div class="controls">
+        <button id="startBtn" class="start">Start</button>
+        <button id="pauseBtn" class="pause" disabled>Pause</button>
+        <button id="resetBtn" class="reset">Reset</button>
+    </div>
+</div>
+
+<script src="timer.js"></script>
+</body>
+</html>
